@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-5">
+        <app-receipes-list></app-receipes-list>
+    </div>
+    <div class="col-md-7">
+       <!--
+           
+        <app-receipes-details
+        *ngIf="selectedRecipe; else infoText"
+        [recipe]="selectedRecipe"></app-receipes-details>
+        <ng-template #infoText> 
+            <p>Please select a Recipe!!</p>
+        </ng-template>
+
+        --> 
+    
+        <router-outlet></router-outlet>
+
+    </div>
+</div>
+
+
+    <!--
+        1. -Now we can pass the info of recipe lsist comp to the recipe details compo
+    
+         2.If cndition of ngIF becomes false then we can show the dummy text using ng template
+
+        3.this app details component only attched to the dom only if the condition becomes true
+    -->

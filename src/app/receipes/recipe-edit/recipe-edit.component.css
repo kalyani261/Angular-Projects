@@ -1,0 +1,9 @@
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+/*
+ng-touched is used bcz when we touched to that text box and  dont enters a value n goto next text box then it becomes red
+
+*/

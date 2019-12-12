@@ -1,0 +1,30 @@
+
+<div class="row">
+    <div class="col-xs-7">
+            <app-shopping-edit></app-shopping-edit>
+            <hr>
+            <ul class="list-group">
+                <!-- href="#"  -->
+                <a 
+                class="list-group-item" 
+                style="cursor: pointer;"
+                *ngFor="let ingredient of ingredients; let i = index"
+                (click)="onEditItem(i)">
+            
+                    {{ ingredient.name }} ({{ ingredient.amount }})
+                    
+
+            </a> 
+
+            </ul>
+    </div>
+</div>
+
+
+<!--
+    1.we use ingredientadded event is used here
+    2.$event is used to pass some data
+    
+    3.want to use like button so that use cursor:pointer
+            we use "()" after string interpolation for no more angular syntax here..
+            -->
